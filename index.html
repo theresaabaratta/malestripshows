@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Male Strip Shows Charleston SC | Traveling Male Revues</title>
+<meta name="description" content="A guide to male strip shows in Charleston, SC — traveling male revues like Girls Night Out, iCandy, and Fifty Shades Male Revue that pass through venues like Honky Tonk.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#f4ecdc;
+    --night:#160f1c;
+    --night-2:#1f1526;
+    --velvet:#2c1830;
+    --neon-pink:#ff2f92;
+    --neon-gold:#e8b34d;
+    --dim:#c9bcb0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--night);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3, .display-font{
+    font-family:'Anton', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+  }
+  em, .script{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+  }
+  a{color:var(--neon-gold);}
+  a:hover{color:var(--neon-pink);}
+
+  /* ---- Nav ---- */
+  .navbar{
+    background:rgba(22,15,28,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(232,179,77,0.25);
+  }
+  .navbar-brand{
+    font-family:'Anton', sans-serif;
+    letter-spacing:0.04em;
+    color:var(--neon-gold) !important;
+    font-size:1.3rem;
+  }
+  .nav-link{color:var(--dim) !important; font-weight:600; font-size:0.9rem;}
+  .nav-link:hover{color:var(--neon-pink) !important;}
+
+  /* ---- Hero: neon marquee ---- */
+  .hero{
+    position:relative;
+    padding:7rem 1rem 6rem;
+    text-align:center;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(255,47,146,0.18), transparent 55%),
+      radial-gradient(ellipse at 80% 110%, rgba(232,179,77,0.12), transparent 50%),
+      var(--night);
+    overflow:hidden;
+    border-bottom:1px solid rgba(232,179,77,0.2);
+  }
+  .marquee-title{
+    font-size:clamp(2.6rem, 7vw, 5.5rem);
+    line-height:1;
+    color:#fff8ec;
+    text-shadow:
+      0 0 6px rgba(255,255,255,0.5),
+      0 0 18px var(--neon-pink),
+      0 0 42px rgba(255,47,146,0.55);
+    margin-bottom:0.5rem;
+    animation:flicker 5s infinite ease-in-out;
+  }
+  @keyframes flicker{
+    0%,19%,21%,23%,80%,100%{opacity:1;}
+    20%,22%{opacity:0.82;}
+  }
+  .marquee-sub{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:clamp(1.1rem,2.4vw,1.5rem);
+    color:var(--neon-gold);
+    max-width:640px;
+    margin:0 auto 2rem;
+  }
+  .bulb-row{
+    display:flex; justify-content:center; gap:10px; margin-bottom:2.2rem; flex-wrap:wrap;
+  }
+  .bulb{
+    width:10px; height:10px; border-radius:50%;
+    background:var(--neon-gold);
+    box-shadow:0 0 8px var(--neon-gold), 0 0 16px rgba(232,179,77,0.6);
+    animation:bulb-pulse 1.8s infinite ease-in-out;
+  }
+  .bulb:nth-child(odd){animation-delay:0.3s; background:var(--neon-pink); box-shadow:0 0 8px var(--neon-pink), 0 0 16px rgba(255,47,146,0.6);}
+  @keyframes bulb-pulse{0%,100%{opacity:0.4;} 50%{opacity:1;}}
+
+  .badge-truth{
+    display:inline-block;
+    border:1px solid rgba(232,179,77,0.5);
+    color:var(--dim);
+    font-size:0.8rem;
+    padding:0.5rem 1.1rem;
+    border-radius:999px;
+    background:rgba(255,255,255,0.03);
+  }
+
+  /* ---- Sections ---- */
+  section{padding:5rem 0;}
+  .section-eyebrow{
+    color:var(--neon-pink);
+    font-family:'Work Sans', sans-serif;
+    font-weight:700;
+    letter-spacing:0.18em;
+    font-size:0.78rem;
+    text-transform:uppercase;
+  }
+  .section-title{font-size:clamp(1.8rem,4vw,2.6rem); margin-bottom:1rem;}
+  .lead-copy{color:var(--dim); font-size:1.08rem; max-width:760px;}
+
+  .divider{
+    width:70px; height:3px; background:linear-gradient(90deg,var(--neon-pink),var(--neon-gold));
+    margin:1.2rem 0 2rem; border-radius:3px;
+  }
+
+  /* ---- Venue card (Honky Tonk) ---- */
+  .venue-card{
+    background:linear-gradient(180deg, var(--velvet), var(--night-2));
+    border:1px solid rgba(232,179,77,0.25);
+    border-radius:14px;
+    padding:2.4rem;
+    position:relative;
+    overflow:hidden;
+  }
+  .venue-card::before{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(circle at 90% 0%, rgba(255,47,146,0.15), transparent 55%);
+    pointer-events:none;
+  }
+  .venue-name{font-size:1.9rem; color:var(--neon-gold); margin-bottom:0.3rem;}
+  .venue-tag{color:var(--neon-pink); font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.15rem;}
+
+  /* ---- Revue cards ---- */
+  .revue-card{
+    background:var(--night-2);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:14px;
+    padding:2rem;
+    height:100%;
+    transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .revue-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--neon-pink);
+    box-shadow:0 12px 30px rgba(255,47,146,0.15);
+  }
+  .revue-number{
+    font-family:'Anton', sans-serif;
+    font-size:0.85rem;
+    letter-spacing:0.15em;
+    color:var(--neon-gold);
+    display:block;
+    margin-bottom:0.6rem;
+  }
+  .revue-name{font-size:1.5rem; margin-bottom:0.6rem;}
+  .revue-desc{color:var(--dim); font-size:0.95rem;}
+  .from-tag{
+    display:inline-block;
+    margin-top:1rem;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink);
+    background:rgba(255,47,146,0.12);
+    border:1px solid rgba(255,47,146,0.35);
+    padding:0.3rem 0.7rem;
+    border-radius:999px;
+  }
+
+  /* ---- Honesty / traveling-troupe note ---- */
+  .truth-panel{
+    background:var(--night-2);
+    border-left:4px solid var(--neon-gold);
+    border-radius:0 12px 12px 0;
+    padding:2rem 2.2rem;
+  }
+  .truth-panel h3{font-size:1.3rem; color:var(--neon-gold); margin-bottom:0.8rem;}
+  .truth-panel p{color:var(--dim);}
+
+  footer{
+    background:var(--night-2);
+    border-top:1px solid rgba(232,179,77,0.2);
+    padding:2.6rem 0;
+    color:var(--dim);
+    font-size:0.85rem;
+  }
+  footer a{color:var(--neon-gold);}
+
+  @media (prefers-reduced-motion: reduce){
+    .marquee-title, .bulb{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#top">Charleston Male Revues</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" style="border-color:rgba(232,179,77,0.4);">
+      <span class="navbar-toggler-icon" style="filter:invert(0.8) sepia(1) saturate(3) hue-rotate(0deg);"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#venue">Where They Perform</a></li>
+        <li class="nav-item"><a class="nav-link" href="#revues">The Revues</a></li>
+        <li class="nav-item"><a class="nav-link" href="#truth">How This Works</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="bulb-row">
+    <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+    <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+  </div>
+  <h1 class="marquee-title">Male Strip Shows<br>Charleston SC</h1>
+  <p class="marquee-sub">A spotlight on the traveling male revues that roll into the Lowcountry — who they are, where they've shown up, and what to expect before you buy a ticket.</p>
+  <span class="badge-truth">Independent guide — not affiliated with any revue or venue</span>
+</header>
+
+<section id="venue">
+  <div class="container">
+    <span class="section-eyebrow">Local Stage</span>
+    <h2 class="section-title">Where Charleston Actually Sees These Shows</h2>
+    <div class="divider"></div>
+    <p class="lead-copy mb-4">Charleston doesn't have a dedicated, standing male revue theater. Instead, touring troupes book one-off nights at existing local venues — most notably:</p>
+    <div class="venue-card">
+      <span class="venue-tag">Downtown Charleston nightlife stop</span>
+      <h3 class="venue-name">Honky Tonk Charleston SC</h3>
+      <p class="lead-copy mb-0">Honky Tonk is a real, standing bar and nightlife venue in Charleston that occasionally hosts a traveling male revue night as a special one-off event — not a resident troupe or in-house show. If a group is booked there, it's typically a single date on a wider Southeast tour, announced a few weeks out and sold through the venue or the touring group's own ticket link.</p>
+    </div>
+  </div>
+</section>
+
+<section id="revues" style="background:var(--night-2);">
+  <div class="container">
+    <span class="section-eyebrow">Touring Troupes</span>
+    <h2 class="section-title">The Groups That Pass Through</h2>
+    <div class="divider"></div>
+    <p class="lead-copy mb-5">None of these performers are based in Charleston. Every dancer on this list lives and trains elsewhere and joins Charleston's calendar only when their national or regional tour routes a stop through the Lowcountry — sometimes once a year, sometimes less.</p>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="revue-card">
+          <span class="revue-number">Touring Revue</span>
+          <h3 class="revue-name">Girls Night Out</h3>
+          <p class="revue-desc">A traveling male revue that runs a circuit of bars and event venues across the Southeast, booking Charleston as an occasional tour stop rather than a regular residency. Lineups and dancers rotate city to city.</p>
+          <span class="from-tag">Not based in Charleston</span>
+          <div class="mt-3"><a href="https://girlsnightouttheshow.com/home/" target="_blank" rel="noopener">girlsnightouttheshow.com &rarr;</a></div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="revue-card">
+          <span class="revue-number">Touring Revue</span>
+          <h3 class="revue-name">iCandy</h3>
+          <p class="revue-desc">A national touring male revue brand that books private venues and nightlife spots city by city. When iCandy plays Charleston, it's a single-night stop on a broader route, staffed by dancers who travel in for the show.</p>
+          <span class="from-tag">Not based in Charleston</span>
+          <div class="mt-3"><a href="https://www.icandymalerevue.com/" target="_blank" rel="noopener">icandymalerevue.com &rarr;</a></div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="revue-card">
+          <span class="revue-number">Touring Revue</span>
+          <h3 class="revue-name">Fifty Shades Male Revue</h3>
+          <p class="revue-desc">A themed traveling revue that takes its cues from the "Fifty Shades" aesthetic and tours through Southeastern cities. Charleston dates are booked periodically, not on a fixed schedule, and the troupe moves on to the next city after.</p>
+          <span class="from-tag">Not based in Charleston</span>
+          <div class="mt-3"><a href="https://www.instagram.com/fiftyshadesmalerevue/" target="_blank" rel="noopener">@fiftyshadesmalerevue &rarr;</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="truth">
+  <div class="container">
+    <span class="section-eyebrow">Good To Know</span>
+    <h2 class="section-title">Before You Buy a Ticket</h2>
+    <div class="divider"></div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="truth-panel">
+          <h3>These aren't local dancers</h3>
+          <p>Every performer named on this page lives outside the Charleston area. What Charleston gets is a touring troupe passing through — sometimes as part of a larger Southeast swing, sometimes as a single booked date — not a resident cast that lives and performs here full time.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="truth-panel">
+          <h3>Shows aren't a permanent fixture</h3>
+          <p>Because these are visiting acts, Charleston dates come and go. A troupe might play Honky Tonk or another local venue once this year and not return for months. Always confirm the actual date and venue directly with the group or venue before making plans.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="local" style="background:var(--night-2);">
+  <div class="container">
+    <span class="section-eyebrow">Prefer Someone Local?</span>
+    <h2 class="section-title">Booking a Private Show Instead of a Touring Date</h2>
+    <div class="divider"></div>
+    <div class="row align-items-stretch g-4">
+      <div class="col-lg-7">
+        <p class="lead-copy mb-3">Everything above is a national or regional troupe passing through on a schedule you don't control. If you're planning a bachelorette party, birthday, or girls' night in and want a private show on your own date, working with a local independent operator is the other route — no waiting on a tour stop, no fixed venue night.</p>
+        <p class="lead-copy mb-0">Local booking also means more flexibility on timing, location (your house, hotel, or rented venue), and group size than a ticketed public revue night typically allows.</p>
+      </div>
+      <div class="col-lg-5">
+        <div class="venue-card h-100">
+          <span class="venue-tag">Locally booked, on your date</span>
+          <h3 class="venue-name" style="font-size:1.6rem;">Michael At Your Place</h3>
+          <p class="lead-copy mb-3">An independent operator booking private male entertainment for parties in and around Charleston, SC — built around a single client's event rather than a public tour stop.</p>
+          <a href="https://michaelatyourplace.com" target="_blank" rel="noopener" class="from-tag" style="text-decoration:none;">michaelatyourplace.com &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container text-center">
+    <p class="mb-1">Male Strip Shows Charleston SC — an independent fan guide.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
